@@ -1,0 +1,417 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/09/2022, 12:12:41 PM
+    Author     : Alexandra
+*/
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, 'Open sans';
+}
+
+#header{
+    height: 110px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #CCC;
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+.logo{
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+    margin-left: -60px
+}
+
+.logo img{
+    border-radius:50%;
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: -9px;
+    margin-right: 10px;
+    animation: latir infinite 3s linear;
+    
+}
+
+#icono{
+    display: block;
+    margin: 0px;
+    float: left;
+}
+
+#menu{
+    width: 80%;
+    float: right;
+    font-size: 18px;
+    
+}
+
+#menu ul{
+    line-height: 85px;
+    width: 70%;
+    float: right;
+    
+}
+
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 500ms all;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #444;
+    transition: 300ms all;
+}
+
+#menu a:hover{
+    color: #02318A;
+    transform: scale(1.2,1.2);
+}
+
+#menu ul li:hover{
+    transform: scale(1.2,1.2);
+}
+#menu ul li a:after{
+        position: absolute;
+        bottom: 7px;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        background-color: #875ED0;
+        content: "";
+        opacity: 0;
+        transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        transform: translateY(20px);        
+    }
+#menu ul li a:hover:after{
+        opacity:1;
+        transform: translateY(25px)
+}
+    
+@keyframes latir{
+    0%{
+        box-shadow: 0px 0px 1px 1px #E0CFFF;
+    }
+    25%{
+        box-shadow: 0px 0px 4px 4px #E0CFFF;
+    }
+    50%{
+        box-shadow: 0px 0px 7px 7px #E0CFFF;
+    }
+    75%{
+        box-shadow: 0px 0px 4px 4px #E0CFFF;
+    }
+    100%{
+        box-shadow: 0px 0px 1px 1px #E0CFFF;
+    }
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+#horario{
+    background-image: url("https://marketplace.canva.com/EAEK4dC2olw/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-y-naranja-fondo-virtual-para-zoom-c3PYha1JI9M.jpg");
+    background-repeat:no-repeat;
+    background-size: 1500px;
+    background-position-y: 262px;
+}
+
+#bienvenida{
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-morado-rosa-nublado_91008-257.jpg?w=2000");
+    background-repeat: repeat;
+    background-position-y: 10px;
+}
+
+#slider{
+    margin-top: -30px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 5px #444;
+    background: rgb(40,1,70);
+    background: linear-gradient(90deg, rgba(214,76,185,1) 1%, rgba(121,117,240,1) 56%, rgba(0,173,208,1) 100%);
+}
+
+#slider h1{
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.slider{
+    margin-top: -21px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 5px #444;
+    background: rgb(40,1,70);
+    background: linear-gradient(90deg, rgba(214,76,185,1) 1%, rgba(121,117,240,1) 56%, rgba(0,173,208,1) 100%);
+}
+
+.slider h1{
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+table {
+    margin:0 auto;
+    border: 2px solid black;
+    width: 75%;
+    
+}
+
+.tablaH{
+    caption-side: top;
+    border: 2px solid black;
+    empty-cells: show;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tablaH th {
+    background-color: #FFD9AD; 
+    border: 2px solid black;
+    text-align: center;
+}
+
+.tablaH td{
+    background-color: #CDCDCD; 
+    border: 2px solid black;
+    empty-cells: show;
+}
+
+.tablaH a{
+    text-decoration: none;
+    color: blue;
+    transition: 300ms all;
+}
+
+.tablaH a:hover{
+    color: #8CBC6F;
+    text-decoration: underline;
+}
+
+#aficiones{
+    background: rgb(34,193,195);
+    background:  linear-gradient(0deg, rgba(34,193,195,1) 7%, rgba(233,182,86,1) 67%, rgba(255,238,201,1) 100%);
+}
+
+#listaA ul li{
+    list-style-position: inside;
+    list-style-type: circle;
+    font-size: 35px;
+}
+
+#listaA p{
+    font-size: 20px;
+}
+
+#listaA img{
+    width: 300px;
+    margin: 20px;
+    transition: 1s all;
+    border: 5px solid #ccc;
+}
+
+#listaA img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+#listaA .ancha{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+#contac{
+    background: rgb(255,197,104);
+    background: radial-gradient(circle, rgba(255,197,104,1) 35%, rgba(188,255,148,1) 100%);
+}
+
+#contac form{
+    margin-left: 400px;
+    text-align: left;
+}
+
+#botones{
+    margin-left: 120px;
+}
+
+.btn-enviar{
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color:white;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #008E2D 50%, #049CAE 50%);
+    background-size: 200%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-repeat: no-repeat;
+    background-position: left;
+    transition:  2s all;
+}
+
+.btn-enviar:hover{
+    background-position: right;
+}
+
+body{
+    background-image: url("https://img.freepik.com/vector-gratis/vector-fondo-diseno-textura-acuarela-rosa-suave-decorativo_1055-10739.jpg?w=2000");
+}
+
+table {
+    margin:0 auto;
+    border: 2px solid black;
+    width: 75%;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tablaDes{
+    caption-side: top;
+    border: 2px solid black;
+    empty-cells: show;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tablaDes th {
+    background-color: #FFD9AD; 
+    border: 2px solid black;
+    text-align: center;
+}
+
+.tablaDes td{
+    background-color: #E6FFFC; 
+    border: 2px solid black;
+    empty-cells: show;
+}
+
+#info{
+    width: 100%;
+    font-size: 24px;
+}
+
+#info img{
+    border: 5px solid #ccc;
+    margin: 15px;
+    transition: 1s all;
+}
+
+#info img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+#info a{
+    text-decoration: none;
+    color: blue;
+    transition: 300ms all;
+}
+
+#info a:hover{
+    color: #8C1078;
+    text-decoration: underline;
+}
+
+
+footer{
+    border-top: 1px solid #CCC;
+    margin-top: 30px;
+    height: 75px;
+    width: 100%;
+    background: white;
+}
+
+.materia .ingeRe {
+    background-color: #6AFF53;
+}
+.materia .arq {
+    background-color: #FFE553;
+}
+.materia .admon{
+    background-color: #00DCD9;
+}
+ .materia .pruebas{
+    background-color: #ACD3FF;
+}
+.materia .apps{
+    background-color: #BF86FF;
+}
+
+
+@media(max-width:1145px){
+    #menu ul{
+        width: auto;
+    }
+    #contac form{
+        margin-left: 200px;
+        text-align: left;
+    }
+    
+}
+
+@media(max-width:1030px){
+    #menu{
+        width: auto;
+        float:right;
+    }
+    #contac form{
+        margin-left: 200px;
+        text-align: left;
+    }
+    
+}
+
+@media(max-width:880px){
+    #header{
+    height: 200px;
+    width: 100%;
+    }
+    .logo{
+    margin-left: 230px;
+    }
+    #contac form{
+        margin-left: 100px;
+        text-align: left;
+    }
+}
+
+@media(max-width:676px){
+    .logo{
+    margin-left: 115px;
+    }
+    #menu{
+        margin: -60px;
+        margin-top: 0px;
+    }
+}
