@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- contactame.html Alexandra Rodriguez 229949 -->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contáctame</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="contac">
+        <header id="header">
+            <div class="center">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="imagenes/itson.jpeg" class="app-log"/>
+                    <span id="icono">
+                        <strong>
+                            Mi Página
+                        </strong> 
+                    </span>
+                </div>
+                <!-- MENU -->
+                <nav id="menu">
+                    <ul>
+                        <li> 
+                            <a href="index.html"> Bienvenida </a>
+                        </li>
+                        <li> 
+                            <a href="aficiones.html"> Hobbies </a>
+                        </li>
+                        <li> 
+                            <a href="peliculas.html"> Películas Favoritas </a>
+                        </li>
+                        <li> 
+                            <a href="contactame.html"> Contáctame </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main >
+            <div class="slider">
+                <h1> Contáctame </h1>
+            </div>
+            <form action ="mailto: alexandra.rodriguez229949@potros.itson.edu.mx"
+              method=post enctype="text/plain">
+
+            <h3>Por favor llena el siguiente formulario</h3>
+
+            <label for="nombreId">Nombre: *</label>
+            <input type="text" id="nombreId" name="nombre" size=15 required /><br>
+	    <br> 
+
+	    <label for="direccionID">Dirección: </label>
+            <input type="text" id="direccionID" name="direccion" size=30  /><br>
+	    <br>
+
+	    <label for="edadId" >Edad [10, 100]: </label>
+            <input type="number" id="edadId" name="edad" min=10 max=100  placeholder=10 /><br>
+	    <br>
+
+            <label for="emailId" >E-mail: *</label>
+            <input type="email" id="emailId" name="email" pattern=".+@gmail.com" title="Solo se permiten cuentas de gmail.com" placeholder="username@gmail.com" size="30" required/><br>
+	    <br/>
+
+	    <label>Elige tu campus: </label>
+            <input type="hidden" name="lugar" value="difusion"/>
+   	    	<select name="donde">
+            	<option> Empalme</option>
+            	<option> Guaymas</option>
+            	<option> Centro</option>
+            	<option> Nainari</option>
+            	<option> Ninguno</option>
+            	</select> <br>
+            <br>
+		<label for="ocupacionId" >Elige ocupación: </label><br>
+                <input type="radio" id="electronica" name="ocupacion" value="Estudiante" />
+                <label for="estudiante" >Estudiante</label>
+                <br />
+                <input type="radio" id="industrial" name="ocupacion" value="Maestro" />
+                <label for="maestro" >Maestro</label>
+                <br />
+                <input type="radio" id="software" name="ocupacion" value ="Ninguna" />
+                <label for="ninguna" >Ninguna</label> <br>
+            <br />
+		<label for="aficionesId" >Elige tus aficiones: </label><br>
+		<input type="checkbox" id="leer" name="afi" 
+                       value="Leer" />
+                <label for="leer" >Leer</label>
+                <br />
+                <input type="checkbox" id="dibujar" name="afi" value="Dibujar" />
+                <label for="dibujar" >Dibujar</label>
+                <br />
+                <input type="checkbox" id="musica" name="afi" value="Musica" />
+                <label for="musica" >Escuchar música</label> <br>	   
+   	     <br>
+
+                <h3>Tus Comentarios: *</h3>
+                <textarea name="comentario" rows="5" cols="80" required></textarea>
+            <br />
+            <div id="botones">
+                <input class="btn-enviar" type="submit" name="boton" value="Enviar" />        
+                <input class="btn-enviar" type="reset" value="Borrar" />
+            </div>
+        </form>
+        </main>
+        <footer>
+            <p>Página creada por Alexandra Rodriguez</p>
+        </footer>
+    </body>
+</html>
